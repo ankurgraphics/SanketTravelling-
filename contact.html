@@ -1,22 +1,175 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact</title>
-<link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sanket Travels – Contact</title>
+  <meta name="description" content="Contact Sanket Travels through WhatsApp inquiry and booking form." />
+  <meta name="theme-color" content="#0e1623" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
+  <header class="navbar" id="navbar">
+    <div class="container navbar-inner">
+      <a class="brand" href="index.html">
+        <div class="brand-mark">✈</div>
+        <div class="brand-name">Sanket <span>Travels</span></div>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html" >Home</a>
+        <a href="packages.html" >Packages</a>
+        <a href="gallery.html" >Gallery</a>
+        <a href="about.html" >About</a>
+        <a href="contact.html" class="active">Contact</a>
+        <a class="nav-cta" href="contact.html#booking">Book Now</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="packages.html">Packages</a>
-  <a href="gallery.html">Gallery</a>
-  <a href="contact.html">Contact</a>
-</nav>
+  <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation">
+    <a href="index.html" data-close-menu>🏠 Home</a>
+    <a href="packages.html" data-close-menu>📦 Packages</a>
+    <a href="gallery.html" data-close-menu>🖼️ Gallery</a>
+    <a href="about.html" data-close-menu>👥 About</a>
+    <a href="contact.html" data-close-menu>📞 Contact</a>
+    <a href="contact.html#booking" class="mobile-book" data-close-menu>✈ Book Now</a>
+  </nav>
 
-<section class="page"><h1>Contact</h1><p>Content here</p></section>
-<footer><p>© 2026 Sanket Travels</p></footer>
-<a class="whatsapp" href="https://wa.me/917888019291">Chat</a>
+  <main>
+    <section class="page-hero">
+      <div class="container page-hero-inner">
+        <div class="breadcrumb"><a href="index.html">Home</a> / <span>Contact</span></div>
+        <h1>Contact</h1>
+        <p>Use the booking form, WhatsApp, or direct call details. You can add your office address or map later without changing the layout.</p>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container two-col">
+        <div class="contact-card">
+          <div class="section-kicker">Get in Touch</div>
+          <h2 class="section-title">Quick Contact Options</h2>
+          <div class="contact-list mt-24">
+            <div class="contact-line"><div class="ico">💬</div><div><strong>WhatsApp</strong><span>7888019291</span></div></div>
+            <div class="contact-line"><div class="ico">📞</div><div><strong>Call</strong><span>7888019291</span></div></div>
+            <div class="contact-line"><div class="ico">✉️</div><div><strong>Email</strong><span>Add your business email here</span></div></div>
+            <div class="contact-line"><div class="ico">📍</div><div><strong>Office Location</strong><span>Add address here for map embedding</span></div></div>
+          </div>
+          <div class="note mt-24">Tip: if you add a real office address later, replace this text with your Google Maps embed and keep the same layout.</div>
+        </div>
+
+        <form class="form" id="contactForm">
+          <div class="section-kicker">Send Message</div>
+          <h2 class="section-title">Booking / Inquiry Form</h2>
+          <div class="form-grid mt-24">
+            <div class="field"><label for="contactName">Full Name *</label><input id="contactName" required></div>
+            <div class="field"><label for="contactPhone">Phone Number *</label><input id="contactPhone" required></div>
+          </div>
+          <div class="form-grid">
+            <div class="field"><label for="contactEmail">Email</label><input id="contactEmail" type="email"></div>
+            <div class="field"><label for="contactDestination">Destination</label>
+              <select id="contactDestination">
+                <option value="">Select</option>
+                <option>Bali</option><option>Dubai</option><option>Goa</option><option>Kerala</option><option>Rajasthan</option><option>Golden Triangle</option>
+              </select>
+            </div>
+          </div>
+          <div class="field">
+            <label for="contactMessage">Message *</label>
+            <textarea id="contactMessage" required placeholder="Tell us your trip details..."></textarea>
+          </div>
+          <div class="inline-actions">
+            <button class="btn btn-primary" type="submit">Send via WhatsApp</button>
+            <a class="btn btn-soft" href="https://wa.me/917888019291" target="_blank" rel="noopener">Open WhatsApp</a>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="booking">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-kicker">Direct Booking</div>
+          <h2 class="section-title">One-Click Booking Flow</h2>
+          <p class="section-sub">You can also start a booking from here. The modal will work across all pages because the same JS file is loaded everywhere.</p>
+        </div>
+        <div class="center">
+          <button class="btn btn-dark" type="button" data-open-booking="1">Open Booking Modal</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>Sanket Travels</h3>
+        <p class="muted">Premium travel planning, compact mobile layouts, and a connected multi-page flow ready for GitHub Pages.</p>
+      </div>
+      <div>
+        <h3>Pages</h3>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="packages.html">Packages</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="about.html">About</a>
+        </div>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <div class="footer-links">
+          <a href="contact.html">Contact Page</a>
+          <a href="https://wa.me/917888019291" target="_blank" rel="noopener">WhatsApp: 7888019291</a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© Sanket Travels</span>
+      <span>Built for mobile + desktop</span>
+    </div>
+  </footer>
+
+  <a class="whatsapp-float" id="whatsappFloat" href="#" target="_blank" rel="noopener" aria-label="WhatsApp inquiry">💬</a>
+
+  <div class="toast" id="toast" role="status" aria-live="polite">
+    <div class="icon" id="toastIcon">✅</div>
+    <div><strong id="toastTitle">Success</strong><div id="toastMsg">Done</div></div>
+  </div>
+
+  <div class="modal" id="packageModal" aria-hidden="true">
+    <div class="modal-panel">
+      <div class="modal-head">
+        <h2 class="modal-title" id="packageModalTitle">Package Details</h2>
+        <button class="modal-close" type="button" data-close-modal="#packageModal">×</button>
+      </div>
+      <div class="modal-body" id="packageModalBody"></div>
+    </div>
+  </div>
+
+  <div class="modal" id="bookingModal" aria-hidden="true">
+    <div class="modal-panel">
+      <div class="modal-head">
+        <h2 class="modal-title">Booking</h2>
+        <button class="modal-close" type="button" data-close-modal="#bookingModal">×</button>
+      </div>
+      <div class="modal-body">
+        <div class="booking-steps">
+          <div class="step" id="bookingStep1">1. Package</div>
+          <div class="step" id="bookingStep2">2. Details</div>
+          <div class="step" id="bookingStep3">3. Confirm</div>
+        </div>
+        <div class="booking-split">
+          <div id="bookingContent"></div>
+          <aside class="summary" id="bookingSummary"></aside>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/script.js"></script>
 </body>
 </html>

@@ -1,22 +1,155 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About</title>
-<link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sanket Travels – About</title>
+  <meta name="description" content="Learn about Sanket Travels, its service model and travel planning approach." />
+  <meta name="theme-color" content="#0e1623" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
+  <header class="navbar" id="navbar">
+    <div class="container navbar-inner">
+      <a class="brand" href="index.html">
+        <div class="brand-mark">✈</div>
+        <div class="brand-name">Sanket <span>Travels</span></div>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html" >Home</a>
+        <a href="packages.html" >Packages</a>
+        <a href="gallery.html" >Gallery</a>
+        <a href="about.html" class="active">About</a>
+        <a href="contact.html" >Contact</a>
+        <a class="nav-cta" href="contact.html#booking">Book Now</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="packages.html">Packages</a>
-  <a href="gallery.html">Gallery</a>
-  <a href="contact.html">Contact</a>
-</nav>
+  <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation">
+    <a href="index.html" data-close-menu>🏠 Home</a>
+    <a href="packages.html" data-close-menu>📦 Packages</a>
+    <a href="gallery.html" data-close-menu>🖼️ Gallery</a>
+    <a href="about.html" data-close-menu>👥 About</a>
+    <a href="contact.html" data-close-menu>📞 Contact</a>
+    <a href="contact.html#booking" class="mobile-book" data-close-menu>✈ Book Now</a>
+  </nav>
 
-<section class="page"><h1>About</h1><p>Content here</p></section>
-<footer><p>© 2026 Sanket Travels</p></footer>
-<a class="whatsapp" href="https://wa.me/917888019291">Chat</a>
+  <main>
+    <section class="page-hero">
+      <div class="container page-hero-inner">
+        <div class="breadcrumb"><a href="index.html">Home</a> / <span>About</span></div>
+        <h1>About</h1>
+        <p>Use this page to tell your story, show experience, and build trust before users move to packages or enquiry.</p>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container two-col">
+        <div>
+          <div class="section-kicker">Our Story</div>
+          <h2 class="section-title">Premium travel, without the clutter</h2>
+          <p class="section-sub mt-0">This structure separates Home, Packages, Gallery, About, and Contact so the website feels faster, cleaner, and easier to manage on GitHub Pages.</p>
+          <div class="copy-list">
+            <div class="copy-item"><div class="ico">✓</div><div><strong>Trusted service model</strong><span>Clear package details and direct inquiry path.</span></div></div>
+            <div class="copy-item"><div class="ico">✓</div><div><strong>Mobile-first layout</strong><span>More content becomes easier to browse on phones.</span></div></div>
+            <div class="copy-item"><div class="ico">✓</div><div><strong>Connected pages</strong><span>All pages link back to each other with the same nav.</span></div></div>
+          </div>
+        </div>
+        <div class="stats">
+          <div class="stat"><strong>8+</strong><span>Years</span></div>
+          <div class="stat"><strong>500+</strong><span>Tours</span></div>
+          <div class="stat"><strong>1200+</strong><span>Travelers</span></div>
+          <div class="stat"><strong>30+</strong><span>Destinations</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-kicker">How It Works</div>
+          <h2 class="section-title">Simple Booking Flow</h2>
+        </div>
+        <div class="grid grid-3">
+          <div class="card"><div class="card-body"><h3 class="card-title" style="font-size:22px">1. Choose a package</h3><p class="card-text">Open any package card and view details.</p></div></div>
+          <div class="card"><div class="card-body"><h3 class="card-title" style="font-size:22px">2. Fill details</h3><p class="card-text">Add name, phone, date, and traveler count.</p></div></div>
+          <div class="card"><div class="card-body"><h3 class="card-title" style="font-size:22px">3. Confirm on WhatsApp</h3><p class="card-text">Booking summary opens directly in WhatsApp.</p></div></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>Sanket Travels</h3>
+        <p class="muted">Premium travel planning, compact mobile layouts, and a connected multi-page flow ready for GitHub Pages.</p>
+      </div>
+      <div>
+        <h3>Pages</h3>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="packages.html">Packages</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="about.html">About</a>
+        </div>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <div class="footer-links">
+          <a href="contact.html">Contact Page</a>
+          <a href="https://wa.me/917888019291" target="_blank" rel="noopener">WhatsApp: 7888019291</a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© Sanket Travels</span>
+      <span>Built for mobile + desktop</span>
+    </div>
+  </footer>
+
+  <a class="whatsapp-float" id="whatsappFloat" href="#" target="_blank" rel="noopener" aria-label="WhatsApp inquiry">💬</a>
+
+  <div class="toast" id="toast" role="status" aria-live="polite">
+    <div class="icon" id="toastIcon">✅</div>
+    <div><strong id="toastTitle">Success</strong><div id="toastMsg">Done</div></div>
+  </div>
+
+  <div class="modal" id="packageModal" aria-hidden="true">
+    <div class="modal-panel">
+      <div class="modal-head">
+        <h2 class="modal-title" id="packageModalTitle">Package Details</h2>
+        <button class="modal-close" type="button" data-close-modal="#packageModal">×</button>
+      </div>
+      <div class="modal-body" id="packageModalBody"></div>
+    </div>
+  </div>
+
+  <div class="modal" id="bookingModal" aria-hidden="true">
+    <div class="modal-panel">
+      <div class="modal-head">
+        <h2 class="modal-title">Booking</h2>
+        <button class="modal-close" type="button" data-close-modal="#bookingModal">×</button>
+      </div>
+      <div class="modal-body">
+        <div class="booking-steps">
+          <div class="step" id="bookingStep1">1. Package</div>
+          <div class="step" id="bookingStep2">2. Details</div>
+          <div class="step" id="bookingStep3">3. Confirm</div>
+        </div>
+        <div class="booking-split">
+          <div id="bookingContent"></div>
+          <aside class="summary" id="bookingSummary"></aside>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/script.js"></script>
 </body>
 </html>
