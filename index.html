@@ -1,0 +1,499 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sanket Travels – Unforgettable Journeys Await</title>
+  <meta name="description" content="Sanket Travels offers premium multi-destination travel packages including Bali, Dubai, Goa, Kerala, Rajasthan and more." />
+  <meta name="keywords" content="Sanket Travels, travel packages, Bali tours, Dubai packages, family travel, couple trips, budget tours India" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=DM+Sans:wght@400;500;700&family=Playfair+Display:ital,wght@0,700;1,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <div class="notif" id="notif" aria-live="polite">
+    <div class="notif-icon" id="notifIcon">✅</div>
+    <div>
+      <strong id="notifTitle">Success!</strong>
+      <span id="notifMsg">Your enquiry has been submitted.</span>
+    </div>
+  </div>
+
+  <nav id="mainNav">
+    <div class="nav-inner">
+      <a class="nav-logo" href="#home">
+        <div class="nav-logo-icon">✈</div>
+        <span class="nav-logo-text">Sanket <span>Travels</span></span>
+      </a>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#packages">Packages</a>
+        <a href="#gallery">Past Tours</a>
+        <a href="#about">About</a>
+        <a href="#faq">FAQ</a>
+        <a href="#enquiry">Enquiry</a>
+        <a href="#contact">Contact</a>
+        <a href="#bookingModalAnchor" class="nav-cta" id="bookNowNav">Book Now</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#home">🏠 Home</a>
+    <a href="#packages">📦 Packages</a>
+    <a href="#gallery">🖼 Past Tours</a>
+    <a href="#about">👥 About</a>
+    <a href="#faq">❓ FAQ</a>
+    <a href="#enquiry">💬 Enquiry</a>
+    <a href="#contact">📞 Contact</a>
+    <a href="#bookingModalAnchor" class="mobile-book" id="mobileBookNow">✈ Book Now</a>
+  </div>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-bg"></div>
+      <div class="hero-pattern"></div>
+      <div class="hero-glow"></div>
+      <div class="hero-glow2"></div>
+
+      <div class="hero-images">
+        <div class="hero-img-grid">
+          <div class="hero-img-cell"><div class="img-placeholder bali">🌴🏝</div><span class="hero-img-label">Bali</span></div>
+          <div class="hero-img-cell"><div class="img-placeholder dubai">🏙✨</div><span class="hero-img-label">Dubai</span></div>
+          <div class="hero-img-cell"><div class="img-placeholder rajasthan">🏰🐪</div><span class="hero-img-label">Rajasthan</span></div>
+          <div class="hero-img-cell"><div class="img-placeholder kerala">🌿🚣</div><span class="hero-img-label">Kerala</span></div>
+        </div>
+      </div>
+
+      <div class="hero-content">
+        <div class="hero-eyebrow"><span>Premium Travel Packages Since 2016</span></div>
+        <h1>Discover the World<br>Through <em>Unforgettable</em><br>Experiences</h1>
+        <p class="hero-sub">From city escapes to tropical adventures, your perfect package awaits — with stay, food, sightseeing & memories included.</p>
+        <div class="hero-btns">
+          <button class="btn-primary" data-scroll="packages">✈ Book Your Trip</button>
+          <button class="btn-outline" data-scroll="enquiry">💬 Enquire Now</button>
+        </div>
+        <div class="hero-trust">
+          <div class="trust-item"><div class="trust-icon">🏆</div>Best Travel Deals</div>
+          <div class="trust-item"><div class="trust-icon">🎯</div>Custom Packages</div>
+          <div class="trust-item"><div class="trust-icon">👨‍👩‍👧</div>Family Friendly</div>
+          <div class="trust-item"><div class="trust-icon">🔒</div>Secure Booking</div>
+        </div>
+      </div>
+    </section>
+
+    <div class="trust-section">
+      <div class="trust-row">
+        <div class="trust-badge"><span class="trust-badge-icon">✈</span><div class="trust-badge-text"><strong>500+ Tours Completed</strong><span>Across 30+ destinations</span></div></div>
+        <div class="trust-badge"><span class="trust-badge-icon">⭐</span><div class="trust-badge-text"><strong>4.9/5 Rating</strong><span>1200+ happy travelers</span></div></div>
+        <div class="trust-badge"><span class="trust-badge-icon">🎨</span><div class="trust-badge-text"><strong>Custom Itineraries</strong><span>Tailored to your budget</span></div></div>
+        <div class="trust-badge"><span class="trust-badge-icon">🛡</span><div class="trust-badge-text"><strong>100% Secure Booking</strong><span>SSL-style front-end flow</span></div></div>
+        <div class="trust-badge"><span class="trust-badge-icon">📞</span><div class="trust-badge-text"><strong>24/7 Support</strong><span>Always here for you</span></div></div>
+      </div>
+    </div>
+
+    <section class="packages-section" id="packages">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-label">Our Packages</span>
+          <h2 class="section-title">Handpicked <em>Journeys</em> for Every Traveler</h2>
+          <p class="section-sub">Whether you're planning a romantic escape, family vacation, or group adventure — we have the perfect itinerary waiting for you.</p>
+        </div>
+        <div class="packages-filter fade-in">
+          <button class="filter-btn active" data-filter="all">All Packages</button>
+          <button class="filter-btn" data-filter="international">International</button>
+          <button class="filter-btn" data-filter="domestic">Domestic</button>
+          <button class="filter-btn" data-filter="couple">Couple</button>
+          <button class="filter-btn" data-filter="family">Family</button>
+          <button class="filter-btn" data-filter="group">Group</button>
+        </div>
+        <div class="packages-grid" id="packagesGrid"></div>
+      </div>
+    </section>
+
+    <section class="why-section" id="why">
+      <div class="container">
+        <div class="why-grid">
+          <div class="why-visual slide-left">
+            <div class="why-img-main"><div class="img-placeholder bali" style="height:520px;font-size:96px">🌴🏝✨</div></div>
+            <div class="why-stat-card top-right">
+              <div class="why-stat-num">1200+</div>
+              <div class="why-stat-label">Happy Travelers</div>
+            </div>
+            <div class="why-stat-card bottom-left">
+              <div class="why-stat-num">8+ Yrs</div>
+              <div class="why-stat-label">Of Trusted Travel</div>
+            </div>
+          </div>
+          <div class="why-content slide-right">
+            <span class="section-label">Why Choose Us</span>
+            <h2 class="section-title">Your Journey Deserves<br>the <em>Very Best</em></h2>
+            <p class="section-sub">We don't just plan trips — we craft experiences that you'll relive for a lifetime. Every detail, curated with care.</p>
+            <div class="why-features">
+              <div class="why-feature"><div class="why-feature-icon">🗺</div><div class="why-feature-text"><strong>Expert Local Knowledge</strong><span>Hidden gems, shortcuts and secret spots at every destination.</span></div></div>
+              <div class="why-feature"><div class="why-feature-icon">💰</div><div class="why-feature-text"><strong>Best Price Guarantee</strong><span>Competitive rates without compromising comfort.</span></div></div>
+              <div class="why-feature"><div class="why-feature-icon">🛡</div><div class="why-feature-text"><strong>Fully Insured Travel</strong><span>Peace of mind with clear and transparent trip handling.</span></div></div>
+              <div class="why-feature"><div class="why-feature-icon">📱</div><div class="why-feature-text"><strong>24/7 Trip Support</strong><span>Our team is reachable anytime during your journey.</span></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="destinations-section" id="destinations">
+      <div class="container">
+        <div class="section-header-center fade-in">
+          <span class="section-label">Popular Destinations</span>
+          <h2 class="section-title">Where Will You Go <em>Next?</em></h2>
+          <p class="section-sub">From sun-drenched beaches to majestic palaces — explore our most-loved destinations handpicked by our travel experts.</p>
+        </div>
+        <div class="dest-grid fade-in">
+          <div class="dest-card large" data-scroll="packages">
+            <div class="dest-card-img"><div class="img-placeholder bali" style="height:340px;font-size:80px">🌴🏝🌊</div></div>
+            <div class="dest-overlay"></div>
+            <div class="dest-tag">Most Popular</div>
+            <div class="dest-info"><div class="dest-name">Bali, Indonesia</div><div class="dest-pkg-count">✈ 6 Packages Available</div></div>
+          </div>
+          <div class="dest-card" data-scroll="packages">
+            <div class="dest-card-img"><div class="img-placeholder dubai" style="height:240px;font-size:56px">🏙🌟</div></div>
+            <div class="dest-overlay"></div>
+            <div class="dest-tag">Luxury</div>
+            <div class="dest-info"><div class="dest-name">Dubai, UAE</div><div class="dest-pkg-count">✈ 4 Packages</div></div>
+          </div>
+          <div class="dest-card" data-scroll="packages">
+            <div class="dest-card-img"><div class="img-placeholder rajasthan" style="height:240px;font-size:56px">🏰🐪</div></div>
+            <div class="dest-overlay"></div>
+            <div class="dest-info"><div class="dest-name">Rajasthan</div><div class="dest-pkg-count">✈ 5 Packages</div></div>
+          </div>
+          <div class="dest-card" data-scroll="packages">
+            <div class="dest-card-img"><div class="img-placeholder kerala" style="height:240px;font-size:56px">🌿🚣</div></div>
+            <div class="dest-overlay"></div>
+            <div class="dest-tag">Trending</div>
+            <div class="dest-info"><div class="dest-name">Kerala</div><div class="dest-pkg-count">✈ 3 Packages</div></div>
+          </div>
+          <div class="dest-card" data-scroll="packages">
+            <div class="dest-card-img"><div class="img-placeholder delhi" style="height:240px;font-size:56px">🕌🏛</div></div>
+            <div class="dest-overlay"></div>
+            <div class="dest-info"><div class="dest-name">Delhi & Agra</div><div class="dest-pkg-count">✈ 4 Packages</div></div>
+          </div>
+          <div class="dest-card" data-scroll="packages">
+            <div class="dest-card-img"><div class="img-placeholder goa" style="height:240px;font-size:56px">🏖🍹</div></div>
+            <div class="dest-overlay"></div>
+            <div class="dest-info"><div class="dest-name">Goa</div><div class="dest-pkg-count">✈ 5 Packages</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery-section" id="gallery">
+      <div class="container">
+        <div class="section-header-center fade-in">
+          <span class="section-label">Past Tours</span>
+          <h2 class="section-title" style="color:var(--white)">Memories We've <em>Created</em> Together</h2>
+          <p class="section-sub" style="color:rgba(255,255,255,.6)">Over 500 successful tours completed. Here's a glimpse of the journeys we've crafted for our wonderful travelers.</p>
+        </div>
+        <div class="gallery-grid fade-in">
+          <div class="gallery-item"><div class="img-placeholder bali" style="height:412px;font-size:80px">🌴🏝🌺</div><div class="gallery-caption"><strong>Bali Family Package – Dec 2024</strong><span>Group of 12 · 6N/7D</span></div></div>
+          <div class="gallery-item"><div class="img-placeholder dubai" style="height:200px;font-size:48px">🏙✨</div><div class="gallery-caption"><strong>Dubai Couple Getaway</strong><span>2 travelers · 5N/6D</span></div></div>
+          <div class="gallery-item"><div class="img-placeholder kerala" style="height:200px;font-size:48px">🌿🚣</div><div class="gallery-caption"><strong>Kerala Backwaters</strong><span>8 travelers · 4N/5D</span></div></div>
+          <div class="gallery-item"><div class="img-placeholder rajasthan" style="height:200px;font-size:48px">🏰🐪</div><div class="gallery-caption"><strong>Royal Rajasthan Tour</strong><span>16 travelers · 7N/8D</span></div></div>
+          <div class="gallery-item"><div class="img-placeholder delhi" style="height:200px;font-size:48px">🕌🏛</div><div class="gallery-caption"><strong>Golden Triangle</strong><span>10 travelers · 5N/6D</span></div></div>
+        </div>
+        <div class="tours-stats fade-in">
+          <div class="tour-stat"><span class="tour-stat-num">500+</span><div class="tour-stat-label">Tours Completed</div></div>
+          <div class="tour-stat"><span class="tour-stat-num">1200+</span><div class="tour-stat-label">Happy Travelers</div></div>
+          <div class="tour-stat"><span class="tour-stat-num">30+</span><div class="tour-stat-label">Destinations</div></div>
+          <div class="tour-stat"><span class="tour-stat-num">8+</span><div class="tour-stat-label">Years of Excellence</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials-section" id="testimonials">
+      <div class="container">
+        <div class="section-header-center fade-in">
+          <span class="section-label">What Travelers Say</span>
+          <h2 class="section-title">Real Stories, <em>Real Smiles</em></h2>
+          <p class="section-sub">Don't just take our word for it — hear from the travelers whose lives we've touched.</p>
+        </div>
+        <div class="testimonials-grid fade-in" id="testimonialsGrid"></div>
+      </div>
+    </section>
+
+    <section class="faq-section" id="faq">
+      <div class="container">
+        <div class="section-header-center fade-in">
+          <span class="section-label">FAQ</span>
+          <h2 class="section-title">Got <em>Questions?</em></h2>
+          <p class="section-sub">Everything you need to know about booking with Sanket Travels.</p>
+        </div>
+        <div class="faq-grid fade-in" id="faqGrid"></div>
+      </div>
+    </section>
+
+    <section class="enquiry-section" id="enquiry">
+      <div class="container">
+        <div class="enquiry-grid">
+          <div class="enquiry-content slide-left">
+            <span class="section-label">Quick Enquiry</span>
+            <h2 class="section-title">Not Sure Yet? <em>Let's Talk</em></h2>
+            <p class="section-sub">Not ready to book? Share your travel dream with us and we'll craft the perfect itinerary just for you — absolutely free.</p>
+            <div class="enquiry-perks">
+              <div class="perk">Free personalized itinerary planning</div>
+              <div class="perk">No hidden charges — transparent pricing</div>
+              <div class="perk">Expert travel consultant assigned to you</div>
+              <div class="perk">Callback within 2 working hours</div>
+              <div class="perk">Flexible payment options available</div>
+            </div>
+            <div class="mini-wa">
+              <a class="mini-wa-btn" id="enquiryWhatsApp" target="_blank" rel="noopener">💬 WhatsApp Inquiry</a>
+            </div>
+          </div>
+          <div class="slide-right">
+            <div class="enquiry-form">
+              <h3 class="form-title">Send Us an Enquiry</h3>
+              <form id="enquiryForm">
+                <div class="form-row">
+                  <div class="form-group"><label for="enqName">Your Name *</label><input type="text" id="enqName" placeholder="Full name" required></div>
+                  <div class="form-group"><label for="enqPhone">Phone Number *</label><input type="tel" id="enqPhone" placeholder="+91 78880 19291" required></div>
+                </div>
+                <div class="form-group">
+                  <label for="enqDest">Preferred Destination</label>
+                  <select id="enqDest">
+                    <option value="">Select destination</option>
+                    <option>Bali, Indonesia</option><option>Dubai, UAE</option><option>Kerala</option><option>Rajasthan</option><option>Delhi & Agra</option><option>Goa</option><option>Not decided yet</option>
+                  </select>
+                </div>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="enqMonth">Preferred Month</label>
+                    <select id="enqMonth">
+                      <option value="">Select month</option>
+                      <option>January</option><option>February</option><option>March</option><option>April</option><option>May</option><option>June</option><option>July</option><option>August</option><option>September</option><option>October</option><option>November</option><option>December</option>
+                    </select>
+                  </div>
+                  <div class="form-group"><label for="enqTravelers">Number of Travelers</label><input type="number" id="enqTravelers" placeholder="e.g. 4" min="1"></div>
+                </div>
+                <div class="form-group"><label for="enqMsg">Your Message</label><textarea id="enqMsg" placeholder="Tell us about your dream trip..."></textarea></div>
+                <div class="form-check"><input type="checkbox" id="enqCallback"><label for="enqCallback">Request a callback from our travel expert within 2 hours</label></div>
+                <button class="form-submit" type="submit">Send Enquiry →</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="payment-section" id="payment">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-label">Secure Payment</span>
+          <h2 class="section-title">Safe, Simple, <em>Instant</em> Booking</h2>
+          <p class="section-sub">Book your dream trip in minutes with our secure payment system. Advance or full payment — your choice.</p>
+        </div>
+        <div class="payment-grid fade-in">
+          <div class="payment-form-card">
+            <h3 style="font-size:22px;margin-bottom:24px;font-family:'Cormorant Garamond',serif">Complete Your Booking</h3>
+            <p style="font-size:13px;color:var(--muted);margin-bottom:24px">Choose how you'd like to pay:</p>
+            <div class="payment-options">
+              <div class="pay-option selected" data-pay="Advance Payment (25%)">
+                <div class="pay-option-icon">💳</div><div class="pay-option-label">Advance Pay</div><div class="pay-option-sub">Pay 25% to confirm</div>
+              </div>
+              <div class="pay-option" data-pay="Full Payment (100%)">
+                <div class="pay-option-icon">🏆</div><div class="pay-option-label">Full Payment</div><div class="pay-option-sub">Pay 100% for discount</div>
+              </div>
+            </div>
+            <div class="form-group"><label for="cardNumber">Card Number</label><input id="cardNumber" type="text" placeholder="4242 4242 4242 4242" maxlength="19"></div>
+            <div class="card-row">
+              <div class="form-group"><label for="cardName">Cardholder Name</label><input id="cardName" type="text" placeholder="Full name on card"></div>
+              <div class="form-group"><label for="cardExp">Expiry</label><input id="cardExp" type="text" placeholder="MM/YY" maxlength="5"></div>
+              <div class="form-group"><label for="cardCvv">CVV</label><input id="cardCvv" type="password" placeholder="•••" maxlength="3"></div>
+            </div>
+            <div class="secure-note">
+              <span>🔒</span> Your payment is protected by a front-end secure flow. For live card charging, connect Razorpay/Stripe.
+            </div>
+            <button class="form-submit" id="payNowBtn" type="button">🔒 Pay Securely Now</button>
+            <div class="cards-row">💳 🏦 📱</div>
+          </div>
+          <div class="payment-summary" id="paymentSummary">
+            <span class="section-label" style="font-size:11px;margin-bottom:8px">Booking Summary</span>
+            <div class="pay-pkg-name">Bali – The Ultimate Paradise</div>
+            <div class="pay-line"><span>Package (2 Adults)</span><span>₹79,998</span></div>
+            <div class="pay-line"><span>Taxes & Fees</span><span>₹4,800</span></div>
+            <div class="pay-line"><span>Travel Insurance</span><span>₹1,200</span></div>
+            <div class="pay-line discount"><span>Early Bird Discount</span><span>-₹5,000</span></div>
+            <div class="pay-total"><span>Total</span><span>₹80,998</span></div>
+            <div class="secure-badges">
+              <div class="secure-badge">🔒 SSL Secure</div>
+              <div class="secure-badge">✅ Verified</div>
+              <div class="secure-badge">🛡 Insured</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="cta-section fade-in">
+      <div class="container">
+        <span class="section-label" style="color:rgba(14,17,23,.5);margin-bottom:16px">Limited Seats Available</span>
+        <h2 class="cta-title">Your Dream Trip<br>is One Click Away</h2>
+        <p class="cta-sub">Don't let life pass you by. Book before seats fill up and make this the year you finally go.</p>
+        <div class="cta-btns">
+          <button class="btn-dark" id="ctaBook">✈ Book Your Package Now</button>
+          <button class="btn-outline dark-on-gold" data-scroll="enquiry">💬 Talk to an Expert</button>
+        </div>
+      </div>
+    </div>
+
+    <section class="about-section" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-visual fade-in">
+            <div>
+              <div class="about-img"><div class="img-placeholder bali">🌴✨</div></div>
+              <div class="about-img tall"><div class="img-placeholder kerala" style="height:260px">🌿🚣</div></div>
+            </div>
+            <div>
+              <div class="about-img tall" style="margin-top:-32px"><div class="img-placeholder rajasthan" style="height:260px">🏰🐪</div></div>
+              <div class="about-img"><div class="img-placeholder goa">🏖🍹</div></div>
+            </div>
+          </div>
+          <div class="slide-right">
+            <span class="section-label">About Sanket Travels</span>
+            <h2 class="section-title">Crafting <em>Memories</em> Since 2016</h2>
+            <p class="about-text">Sanket Travels was born from a simple belief — that travel has the power to transform lives. Founded in 2016, we've since helped over 1,200 travelers explore breathtaking destinations across India and the world.</p>
+            <p class="about-text">We specialize in creating tailor-made travel experiences that fit your budget, timeline, and travel style — whether you're a solo explorer, a couple seeking romance, or a family looking for adventure together.</p>
+            <div class="about-values">
+              <div class="value-item"><div class="value-icon">🎯</div><div class="value-name">Our Mission</div><div class="value-desc">Make premium travel accessible to every Indian family</div></div>
+              <div class="value-item"><div class="value-icon">💎</div><div class="value-name">Our Promise</div><div class="value-desc">Transparent pricing, zero hidden costs, full satisfaction</div></div>
+              <div class="value-item"><div class="value-icon">🌏</div><div class="value-name">Our Vision</div><div class="value-desc">To be India's most trusted name in curated travel</div></div>
+              <div class="value-item"><div class="value-icon">❤️</div><div class="value-name">Our Values</div><div class="value-desc">Honesty, care, quality, and lifelong connections</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="slide-left">
+            <span class="section-label">Contact Us</span>
+            <h2 class="section-title">We're Always <em>Here</em> for You</h2>
+            <p class="section-sub">Reach out to us through any channel — we love hearing from fellow travel enthusiasts!</p>
+            <div class="contact-info">
+              <div class="contact-item"><div class="contact-icon">📞</div><div><strong>Call / WhatsApp</strong><span>+91 78880 19291<br>Mon–Sat, 9 AM – 8 PM</span></div></div>
+              <div class="contact-item"><div class="contact-icon">📧</div><div><strong>Email Us</strong><span>hello@sankettravels.com<br>We reply within 4 hours</span></div></div>
+              <div class="contact-item"><div class="contact-icon">📍</div><div><strong>Visit Our Office</strong><span>123, Travel House, Connaught Place<br>New Delhi – 110001</span></div></div>
+            </div>
+            <div class="social-links">
+              <a class="social-link" href="#" aria-label="Instagram">📸</a>
+              <a class="social-link" href="#" aria-label="Facebook">📘</a>
+              <a class="social-link" href="#" aria-label="YouTube">📺</a>
+              <a class="social-link" href="#" aria-label="WhatsApp">💬</a>
+              <a class="social-link" href="#" aria-label="Twitter">🐦</a>
+            </div>
+          </div>
+
+          <div class="slide-right">
+            <div class="enquiry-form contact-form-box">
+              <h3 class="form-title">Send a Message</h3>
+              <form id="contactForm">
+                <div class="form-row">
+                  <div class="form-group"><label for="cName">Name *</label><input type="text" id="cName" placeholder="Your full name" required></div>
+                  <div class="form-group"><label for="cEmail">Email *</label><input type="email" id="cEmail" placeholder="you@email.com" required></div>
+                </div>
+                <div class="form-group"><label for="cSubject">Subject</label><input type="text" id="cSubject" placeholder="How can we help?"></div>
+                <div class="form-group"><label for="cMsg">Message</label><textarea id="cMsg" rows="5" placeholder="Write your message here..."></textarea></div>
+                <button class="form-submit" type="submit">Send Message →</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="nav-logo" href="#home" style="display:inline-flex;margin-bottom:0">
+          <div class="nav-logo-icon">✈</div>
+          <span class="nav-logo-text">Sanket <span>Travels</span></span>
+        </a>
+        <p>Crafting unforgettable travel experiences across India and the world since 2016. Your journey, our passion.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram">📸</a><a href="#" aria-label="Facebook">📘</a><a href="#" aria-label="YouTube">📺</a><a href="#" aria-label="WhatsApp">💬</a><a href="#" aria-label="Twitter">🐦</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <a href="#home">Home</a>
+        <a href="#packages">Packages</a>
+        <a href="#gallery">Past Tours</a>
+        <a href="#about">About Us</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <div class="footer-col">
+        <h4>Destinations</h4>
+        <a href="#packages">Bali, Indonesia</a>
+        <a href="#packages">Dubai, UAE</a>
+        <a href="#packages">Kerala</a>
+        <a href="#packages">Rajasthan</a>
+        <a href="#packages">Goa</a>
+        <a href="#packages">Delhi & Agra</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="tel:+917888019291">📞 +91 78880 19291</a>
+        <a href="mailto:hello@sankettravels.com">📧 hello@sankettravels.com</a>
+        <a href="#">📍 New Delhi, India</a>
+        <a href="#enquiry">💬 Enquire Now</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Sanket Travels. All rights reserved. | <a href="#" class="footer-link">Privacy Policy</a> | <a href="#" class="footer-link">Terms of Service</a></p>
+      <div class="footer-trust">🔒 Trusted by 1200+ Travelers Across India</div>
+    </div>
+  </footer>
+
+  <div class="whatsapp-float">
+    <span class="wa-tooltip">Chat with us on WhatsApp!</span>
+    <a class="wa-btn" id="whatsappFloat" target="_blank" rel="noopener" title="WhatsApp">💬</a>
+  </div>
+
+  <div class="modal-overlay" id="bookingModal" aria-hidden="true">
+    <div class="modal">
+      <div class="modal-header">
+        <h2 class="modal-title">Book Your Package ✈</h2>
+        <button class="modal-close" data-close="booking">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="steps" id="bookingSteps">
+          <div class="step active" data-step="1"><span class="step-num">1</span>Select</div>
+          <div class="step" data-step="2"><span class="step-num">2</span>Details</div>
+          <div class="step" data-step="3"><span class="step-num">3</span>Review</div>
+          <div class="step" data-step="4"><span class="step-num">4</span>Payment</div>
+          <div class="step" data-step="5"><span class="step-num">5</span>Confirm</div>
+        </div>
+        <div id="bookingStepContent"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="pkgDetailModal" aria-hidden="true">
+    <div class="modal">
+      <div class="modal-header">
+        <h2 class="modal-title" id="pkgDetailTitle">Package Details</h2>
+        <button class="modal-close" data-close="pkg">✕</button>
+      </div>
+      <div class="modal-body" id="pkgDetailBody"></div>
+    </div>
+  </div>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
